@@ -1,4 +1,8 @@
 #+Title: typstry
 #+Author: John Gosset
 
+[[file:images/tapestry.jpg]]
+
 Examples of using [[https://github.com/typst/typst][Typst]].
+
+[[https://www.jhminassian.com/17th-century-french-tapestry][Image source]]
