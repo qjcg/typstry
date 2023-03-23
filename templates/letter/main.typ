@@ -1,9 +1,21 @@
 #import "letter.typ": letter
 
-#show: letter(
-      date: "today",
+#show: doc => [
+    #letter(
+      date: "March 23, 2023",
       to: "Jerry Grapes",
       from: "John Gosset",
-)
+      body: doc,
+    )
+]
 
-Hope all is well!
+#lorem(70)
+
+- foo
+- bar
+- baz
+- https://example.com/
+
+#lorem(50)
+
+#lorem(60)

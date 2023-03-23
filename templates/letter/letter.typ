@@ -2,11 +2,22 @@
      date: none,
      to: "",
      from: "",
-     doc,
+     body: [],
 ) = [
+
+  #set document(
+       title: "Example Letter",
+       author: from,
+  )
+
   #set page(
        paper: "us-letter",
        margin: (x: 3.0cm, y: 1.5cm),
+       header: [
+         #set text(8pt)
+	 #smallcaps[DRW NX]
+	 #h(1fr) _Annual Letter_
+       ],
   )
 
   #set text(
@@ -14,12 +25,22 @@
       size: 12pt,
   )
 
-  #date
+  #v(20%)
+
+  #align(right)[#date]
 
   Dear #to,
 
-  #doc
+  #set par(
+       first-line-indent: 2em,
+       justify: true,
+  )
 
-  Best,
-  #from
+  #body
+
+  #align(center)[
+	Best,
+
+        #from
+  ]
 ]
