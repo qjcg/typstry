@@ -1,0 +1,2 @@
+The [[https://www.latextemplates.com/template/professional-formal-letter][Professional Formal Letter template]] from latextemplates.com
+converted to ~typst~ -- shared by demondave via Discord [[https://discord.com/channels/1054443721975922748/1057632212671025162/1088249561065197628).][here]].
