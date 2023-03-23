@@ -1,3 +1,7 @@
+#let name = [Dr. Niko Bellic, PhD]
+
+#show link: set text(blue)
+
 #set text(13pt)
 
 #grid(
@@ -11,7 +15,7 @@
                 columns: (50%,50%),
                 rows: (80%),
                 [#text(size: 18pt)[UNIVERSITY\ OF CALIFORNIA]],
-                [#align(right)[#text(weight: "bold")[Dr. Niko Bellic, PhD]]],
+                [#align(right)[#text(weight: "bold")[#name]]],
             )
         ]
         #v(-8%)
@@ -42,9 +46,9 @@
                     Department of Mathematics\
                     123 Broadway\
                     Berkeley CA 12345\
-                    Email: j.smith\@berkeley.edu\
-                    Phone: (000) 111-1111\
-                    URL: typst.app
+                    Email: #link("mailto:j.smith@berkeley.edu")[j.smith\@berkeley.edu]\
+                    Phone: #link("tel:000-111-1111")[(000) 111-1111]\
+                    URL: #link("https://typst.app/")[typst.app]
                     ]
                 ]
             ]
@@ -68,4 +72,4 @@ Dear Sir or Madam\
 
 #v(2%)
 
-#align(center)[Dr. Niko Bellic, PhD]
+#align(center)[#name]
