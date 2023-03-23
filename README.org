@@ -3,6 +3,6 @@
 
 [[file:images/tapestry.jpg]]
 
-Examples of using [[https://github.com/typst/typst][Typst]].
+A tapestry of [[https://github.com/typst/typst][Typst]] templates and examples.
 
 [[https://www.jhminassian.com/17th-century-french-tapestry][Image source]]
