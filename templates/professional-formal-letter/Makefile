@@ -1,4 +1,4 @@
-in := main.typ
+in := letter.typ
 out := $(in:.typ=.pdf)
 
 build:

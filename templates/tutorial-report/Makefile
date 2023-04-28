@@ -1,15 +1,11 @@
-name := main
-in := $(name).typ
+in := main.typ
 out := $(in:.typ=.pdf)
 
-.PHONY: build
 build:
-	typst $(in)
+	typst compile $(in)
 
-.PHONY: watch
 watch:
-	typst --watch $(in)
+	typst watch $(in)
 
-.PHONY: clean
 clean:
 	rm -f $(out)
